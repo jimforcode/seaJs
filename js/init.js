@@ -19,8 +19,17 @@ define(function (require, exports, module) {
         var age = man.getAge();
         var msg = man.say();
 
+
+        var apply_list = '<h1>{{wellDone}}</h1>';
+
+
+        var data = {wellDone:" Jim, well done!"}
+        var render = template.compile(apply_list);
+        var html = render(data);
+
         s1.innerHTML = name;
         s2.innerHTML = age;
-        s3.innerHTML = msg;
+        //s3.innerHTML = msg;
+        s3.innerHTML =html;
     }
 });

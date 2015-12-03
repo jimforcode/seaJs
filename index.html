@@ -3,8 +3,17 @@
 <head>
     <title>SeaJs Test</title>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="js/plugs/template.js"></script>
+    <script type="text/javascript" src="js/plugs/sea-debug.js"></script>
 
-    <script type="text/javascript" src="sea-debug.js"></script>
+    <script id="test" type="text/html">
+        <h1>{{title}}</h1>
+        <ul>
+            {{each list as value i}}
+            <li>索引 {{i + 1}} ：{{value}}</li>
+            {{/each}}
+        </ul>
+    </script>
 
     <script type="text/javascript">
         seajs.use('./js/init', function (init) {

@@ -4,7 +4,7 @@
 
 define(function (require, exports, module) {
     var msg = require('./msg');
-git
+
     var _name = 'tom';
     var _age = '20';
 
